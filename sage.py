@@ -202,9 +202,9 @@ if __name__ == "__main__":
             speak("what should i say")
             query = takecommand().lower()
             if "send a file" in query:
-                email = 'schoolidjivan@gmail.com'
-                password = 'Devil1942121' 
-                send_to_email = 'deshmukhshivanirajendra@gmail.com'
+                email = 'your@gmail.com'
+                password = 'pass' 
+                send_to_email = 'you want to send@gmail.com'
                 speak("okay, what is the subject for this email")
                 query = takecommand().lower()
                 subject = query  
@@ -236,16 +236,16 @@ if __name__ == "__main__":
                 text = msg.as_string()
                 server.sendmail(email, send_to_email, text)
                 server.quit()
-                speak("email has been sent to bob")
+                speak("email has been sent to name")
 
             else:                
-                email = 'schoolidjivan@gmail.com' 
-                password = 'Devil1942121' 
-                send_to_email = 'deshmukhshivanirajender@gmail.com' 
+                email = 'your@gmail.com' 
+                password = 'Password' 
+                send_to_email = 'you want to send@gmail.com' 
                 message = query 
                 server = smtplib.SMTP('smtp.gmail.com', 587) 
                 server.starttls() 
                 server.login(email, password) 
                 server.sendmail(email, send_to_email , message) 
                 server.quit() 
-                speak("email has been sent to bob")
+                speak("email has been sent to name")
